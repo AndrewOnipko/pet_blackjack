@@ -1,0 +1,144 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background: url("images/table.png") center / cover no-repeat;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+input[type="number"],
+input[type="text"],
+button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.game {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.game__title {
+    color: goldenrod;
+    margin-top: 0;
+}
+
+.game__message {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.game__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+button {
+    background: goldenrod;
+    color: #016f32;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+.game__player {
+    margin-top: 1rem;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 0.3rem 0.5rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    animation: slideIn 0.3s ease forwards;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game__setup {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 320px;
+    margin: 2rem auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game__setup label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+#start-session-btn {
+    background-color: goldenrod;
+    color: #014d2d;
+    font-weight: bold;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#start-session-btn:hover {
+    background-color: #e6b800;
+}
+
+#game-section {
+    display: none;
+}
+
+.game__setup div {
+    width: 100%;
+}
+
+.game__setup button {
+    width: 100%;
+}
+
+.game__status {
+    font-size: 1.2rem;
+}
